@@ -1,0 +1,13 @@
+#circular-progress-bar {
+  min-width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: blue;
+  .progress {
+    position: absolute;
+    font-weight: bold;
+  }
+}

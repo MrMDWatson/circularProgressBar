@@ -1,8 +1,11 @@
+// "react": "^18.3.1",
+// "d3": "^7.9.0",
+
 import { useRef, useEffect } from 'react';
 import * as d3 from 'd3';
 import "./circularProgressBar.scss";
 
-export default function CircularProgressBar({ progress, workload}) {
+export default function CircularProgressBar({ progress, workload }) {
   const svgRef = useRef();
   useEffect(() => {
     const width = 500;
@@ -45,5 +48,5 @@ export default function CircularProgressBar({ progress, workload}) {
       <svg ref={svgRef}></svg>
       <div className="progress">{((progress/workload) * 100).toFixed()}%</div>
     </div>
-  )
+  );
 }
